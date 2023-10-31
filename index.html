@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form id="surveyForm">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" required>
+          
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" required>
+          
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" required>
+          
+          <label for="country">Country:</label>
+          <select id="country" required>
+            <option value="INDIA">INDIA</option>
+            <option value="PAKISTAN">PAKISTAN</option>
+            <option value="ENGLAND">ENGLAND</option>
+            <option value="SOUTH AFRICA">SOUTH AFRICA</option>
+            <option value="RUSSIA">RUSSIA</option>
+            <option value="UK">UK</option>
+            <!-- Add more options -->
+          </select>
+          
+          <label>Gender:</label>
+          <input type="checkbox" id="male" name="gender" value="Male"> <label for="male">Male</label>
+          <input type="checkbox" id="female" name="gender" value="Female"> <label for="female">Female</label>
+          <input type="checkbox" id="other" name="gender" value="Other"> <label for="other">Other</label>
+          
+          <label for="profession">Profession:</label>
+          <input type="text" id="profession" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+          
+          <label for="mobile">Mobile Number:</label>
+          <input type="tel" id="mobile" required>
+          
+          <button type="submit" onclick="submitForm()">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+      </div>
+      <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
